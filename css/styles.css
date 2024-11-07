@@ -9,7 +9,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: rgb(173, 173, 173);
+  background-color: rgb(233, 196, 106);
 }
 
 .container {
@@ -21,7 +21,7 @@ body {
 }
 
 .boton-jugada {
-  background-color: #3498db;
+  background-color: rgb(231, 111, 81);
   color: #fff;
   padding: 10px 20px;
   font-size: 18px;
@@ -31,12 +31,16 @@ body {
 }
 
 .boton-jugada:hover {
-  background-color: #ddd;
+  background-color: rgb(98, 149, 132);
 }
 
 #resultados {
   margin-top: 20px;
   font-size: 18px;
+  color: rgb(98, 149, 132);
+  border: 1px rgb(233, 196, 106) solid;
+  border-radius: 5px;
+  background-color: transparent;
 }
 
 .scoreboard {
