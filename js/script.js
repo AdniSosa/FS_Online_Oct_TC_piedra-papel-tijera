@@ -10,6 +10,7 @@ const botones = document.querySelectorAll('.boton-jugada');
 const resultDiv = document.getElementById('resultados');
 const contadorUsuario = document.getElementById('contador-usuario');
 const contadorOrdenador = document.getElementById('contador-ordenador');
+const scoreBoard = document.getElementsByClassName('scoreboard');
 
 //Un forEach para pasar por cada botón, después del evento click se genere la jugada del ordenador,
 //y se muestre un resultado.
@@ -58,6 +59,7 @@ function mostrarResultado(jugadaUsuario, jugadaOrdenador, resultado) {
 
 //Los puntos que se van generando dependiendo del resultado de la jugada.
 function actualizarPuntuacion(resultado) {
+    
     if (resultado === '¡Has ganado!') {
         puntosUser++;
     }else if (resultado === 'Has perdido.') {
@@ -65,8 +67,8 @@ function actualizarPuntuacion(resultado) {
     }
     //console.log(puntosUser);
     //console.log(puntosPc);
-    contadorUsuario.textContent = puntosUser;
-    contadorOrdenador.textContent = puntosPc;
+    contadorUsuario.textContent = 'Tus puntos: ' + puntosUser;
+    contadorOrdenador.textContent = 'Puntos de la máquina: ' + puntosPc;
 }
 
 
